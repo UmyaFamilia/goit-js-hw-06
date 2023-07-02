@@ -5,8 +5,8 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-const create = document.querySelector("[data-create]");
 const destroy = document.querySelector("[data-destroy]");
+const create = document.querySelector("[data-create]");
 const inpute = document.querySelector("input");
 const boxes = document.querySelector("#boxes");
 inpute.addEventListener("blur", show);
