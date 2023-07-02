@@ -21,6 +21,7 @@ create.addEventListener("click", () => createBoxes(count));
 function createBoxes(amount) {
   destroyBoxes();
   let array = [];
+
   for (let i = 0; i < amount; i++) {
     array.push(document.createElement("div"));
     array[i].textContent = i + 1;
@@ -29,7 +30,6 @@ function createBoxes(amount) {
     array[i].style.height = `${(i + 1) * 30}px`;
   }
   boxes.append(...array);
-  inpute.value = "";
 }
 
 destroy.addEventListener("click", () => destroyBoxes());
