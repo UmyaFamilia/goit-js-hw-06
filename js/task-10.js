@@ -26,8 +26,8 @@ function createBoxes(amount) {
     array.push(document.createElement("div"));
     array[i].textContent = i + 1;
     array[i].style.backgroundColor = getRandomHexColor();
-    array[i].style.width = `${(i + 1) * 30}px`;
-    array[i].style.height = `${(i + 1) * 30}px`;
+    array[i].style.width = `${i * 10 + 30}px`;
+    array[i].style.height = `${i * 10 + 30}px`;
   }
   boxes.append(...array);
 }
