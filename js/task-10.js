@@ -24,6 +24,9 @@ function createBoxes(amount) {
   for (let i = 0; i < amount; i++) {
     array.push(document.createElement("div"));
     array[i].textContent = i + 1;
+    array[i].style.backgroundColor = getRandomHexColor();
+    array[i].style.width = `${(i + 1) * 30}px`;
+    array[i].style.height = `${(i + 1) * 30}px`;
   }
   boxes.append(...array);
   inpute.value = "";
